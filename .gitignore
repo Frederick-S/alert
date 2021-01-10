@@ -1,6 +1,6 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/maven,jetbrains+all,java,macos
-# Edit at https://www.toptal.com/developers/gitignore?templates=maven,jetbrains+all,java,macos
+# Created by https://www.toptal.com/developers/gitignore/api/gradle,kotlin,java,jetbrains+all,macos
+# Edit at https://www.toptal.com/developers/gitignore?templates=gradle,kotlin,java,jetbrains+all,macos
 
 ### Java ###
 # Compiled class file
@@ -116,6 +116,19 @@ modules.xml
 # Sonarlint plugin
 .idea/sonarlint
 
+### Kotlin ###
+# Compiled class file
+
+# Log file
+
+# BlueJ files
+
+# Mobile Tools for Java (J2ME)
+
+# Package Files #
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+
 ### macOS ###
 # General
 .DS_Store
@@ -145,17 +158,23 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-### Maven ###
-target/
-pom.xml.tag
-pom.xml.releaseBackup
-pom.xml.versionsBackup
-pom.xml.next
-release.properties
-dependency-reduced-pom.xml
-buildNumber.properties
-.mvn/timing.properties
-# https://github.com/takari/maven-wrapper#usage-without-binary-jar
-.mvn/wrapper/maven-wrapper.jar
+### Gradle ###
+.gradle
+build/
 
-# End of https://www.toptal.com/developers/gitignore/api/maven,jetbrains+all,java,macos
+# Ignore Gradle GUI config
+gradle-app.setting
+
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
+
+# Cache of project
+.gradletasknamecache
+
+# # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
+# gradle/wrapper/gradle-wrapper.properties
+
+### Gradle Patch ###
+**/build/
+
+# End of https://www.toptal.com/developers/gitignore/api/gradle,kotlin,java,jetbrains+all,macos
